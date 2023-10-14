@@ -1,4 +1,4 @@
-# gourmetGrub-hub
+# gourmet-hub
 - Simple restaurant landing page.
 - Made in react.
 
