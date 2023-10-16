@@ -34,12 +34,31 @@ const Navbar = () => {
       icon: <CommentRoundedIcon/>
     },
     {
+      text: "Contact",
+      icon: <PhoneRoundedIcon/>
+    },
+    {
       text: "Cart",
       icon: <ShoppingCartRoundedIcon/>
     },
   ];
 
-  return <div></div>
+  return <nav>
+  <div className="nav-logo-container">
+    <img src={Logo} alt="" />
+  </div>
+  <div className= "navbar-links-container">
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Testimonials</a>
+    <a href="">Contact</a>
+    <a href="">
+      <BsCart2 className="navbar-cart-icon"/>
+      </a>
+      <button className ="primary-button">Booking Now</button>
+  </div>
+  <div className="className"></div>
+  </nav>
   
 };
 
