@@ -57,7 +57,7 @@ const Navbar = () => {
       </a>
       <button className ="primary-button">Booking Now</button>
   </div>
-  <div className="className"></div>
+  <div className=""></div>
   </nav>
   
 };
