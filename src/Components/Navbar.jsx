@@ -43,9 +43,10 @@ const Navbar = () => {
     },
   ];
 
-  return <nav>
-  <div className="nav-logo-container">
-    <img src={Logo} alt="" />
+  return (
+  <nav>
+    <div className="nav-logo-container">
+      <img src={Logo} alt="" />
   </div>
   <div className= "navbar-links-container">
     <a href="">Home</a>
@@ -57,9 +58,11 @@ const Navbar = () => {
       </a>
       <button className ="primary-button">Booking Now</button>
   </div>
-  <div className=""></div>
+  <div className="navbar-menu-container">
+    <HiOutlineBars3/>
+  </div>
   </nav>
-  
+ );
 };
 
 export default Navbar;
