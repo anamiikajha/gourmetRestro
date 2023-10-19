@@ -59,30 +59,28 @@ const Navbar = () => {
   <div className="navbar-menu-container">
     <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
   </div>
-  <Drawer open = {openMenu} onClose {() => setOpenMenu(flase)}
+  <Drawer open = {openMenu} onClose {() => setOpenMenu(false)}
   anchor =  "right">
       <Box 
          sx = {{ width: 250}}
           role="presentation"
           onClick={() => setOpenMenu(false)}
           onKeyDown={() => setOpenMenu (flase)} 
-  >
+        >
     <List>
     {menuOptions.map((item) =>  (
-      
-      <ListItem>
-
-      </ListItem>
-    
-    
-    
-    
-    )}
+      <ListItem key = {item.text} disablePadding>
+       <ListItemButton>
+       <ListItemIcon> {item.icon}</ListItemIcon>
+       <ListItemText primary= {item.text}/>
+      </ListItemButton> 
+      </ListItem> 
+    ))}
        </List>
       </Box>
     </Drawer>
   </nav>
- );
-};
+ )
+}
 
 export default Navbar;
