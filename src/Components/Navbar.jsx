@@ -18,33 +18,31 @@ import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 
 const Navbar = () => {
 
-  const [openMenu, setOpenMenu] =  useState(false)
-  const menuOptions = [
-  
+  const [openMenu, setOpenMenu] =  useState(false);
+  const menuOptions = [  
     {
       text: "Home",
-      icon: <HomeIcon/>
+      icon: <HomeIcon />
     },
     {
       text: "About",
-      icon: <InfoIcon/>
+      icon: <InfoIcon />
     },
     {
       text: "Testimonials",
-      icon: <CommentRoundedIcon/>
+      icon: <CommentRoundedIcon />
     },
     {
       text: "Contact",
-      icon: <PhoneRoundedIcon/>
+      icon: <PhoneRoundedIcon />
     },
     {
       text: "Cart",
-      icon: <ShoppingCartRoundedIcon/>
+      icon: <ShoppingCartRoundedIcon />
     },
   ];
 
-  return (
-  <nav>
+  return  <nav>
     <div className="nav-logo-container">
       <img src={Logo} alt="" />
   </div>
@@ -61,9 +59,28 @@ const Navbar = () => {
   <div className="navbar-menu-container">
     <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
   </div>
-  <Drawer open = {openMenu} onClose {()}>
+  <Drawer open = {openMenu} onClose {() => setOpenMenu(flase)}
+  anchor =  "right">
+      <Box 
+         sx = {{ width: 250}}
+          role="presentation"
+          onClick={() => setOpenMenu(false)}
+          onKeyDown={() => setOpenMenu (flase)} 
+  >
+    <List>
+    {menuOptions.map((item) =>  (
+      
+      <ListItem>
 
-  </Drawer>
+      </ListItem>
+    
+    
+    
+    
+    )}
+       </List>
+      </Box>
+    </Drawer>
   </nav>
  );
 };
