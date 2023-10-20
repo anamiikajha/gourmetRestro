@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import Navbar from "./Navbar";
+import BannerBackground from "../Assets/home-banner-background.png"
 
 const Home = () => {
     return (
