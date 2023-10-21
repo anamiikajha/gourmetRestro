@@ -1,6 +1,6 @@
 # gourmetHub
 - Simple restaurant landing page.
-- Made in react.
+
 
 # React + Vite
 
