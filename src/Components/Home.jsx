@@ -1,7 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import Navbar from "./Navbar";
-import BannerBackground from "../Assets/home-banner-background.png"
+import BannerBackground from "../Assets/home-banner-image.png";
+import BannerImage from "../Assets/home-banner-image.png";
+import { FiArrowRight } from "react-icons/fi";
 
 const Home = () => {
     return (
