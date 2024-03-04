@@ -1,4 +1,4 @@
-# gourmetHub
+# gourmetRestro
 - Simple restaurant landing page.
 - Made in react.
 
