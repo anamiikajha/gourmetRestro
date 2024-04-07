@@ -17,7 +17,7 @@ const Home = () => {
             Your Favourite Food Delivered Hot & Fresh
           </h1>
           <p className="primary-text">
-          Gourmet-Hub chefs do all the prep work, like chopping, marinating 
+          GourmetRestro chefs do all the prep work, like chopping, marinating 
             & soh-tey, so you can get healthy tasty fresh food.
           </p>
           <button className="secondary-button">
